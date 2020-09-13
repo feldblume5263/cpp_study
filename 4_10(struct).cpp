@@ -13,4 +13,6 @@ int		main(void)
 	float	weight;
 	int		age;
 	string	name;
+
+
 }

@@ -4,6 +4,26 @@
 
 using namespace std;
 
+// 단순한 기능은 struct
+// 기능을 넣을 때는 class를 쓰자.
+
+class		Friend
+{
+public: // access specifier (public private, protected)
+	string	name;
+	string	address;
+	int		age;
+	double	height;
+	double	weight;
+
+	void	print()
+{
+	cout << name << " " << address << " " << age << " " << height << " " << weight << endl;
+}
+};
+
+
+
 void	print(const string &name, const string &address, const int &age, const double &height, const double &weight)
 {
 	cout << name << " " << address << " " << age << " " << height << " " << weight << endl;
@@ -11,13 +31,10 @@ void	print(const string &name, const string &address, const int &age, const doub
 
 int		main()
 {
-	string	name;
-	string	address;
-	int		age;
-	double	height;
-	double	weight;
+	Friend		jj {"Jack", "uptown", 22, 170, 50};
 
-	print(name, address, age, height, weight);
+	//print(jj.name, jj.address, jj.age, jj.height, jj.weight);
+	jj.print();
 
 	vector<string>	name_vec;
 	vector<string>	addr_vec;

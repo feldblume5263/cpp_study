@@ -19,6 +19,7 @@ public: // access function
 		m_day = day_input;
 		m_year = year_input;
 	}
+	// 서로 다른 instance에서도 같은 클래스에서는 Private에 접근이 가능하다.
 	void copyFrom(const Date &original)
 	{
 		m_month = original.m_month;
